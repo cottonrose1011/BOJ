@@ -15,3 +15,5 @@ else:
     bottom = line - diff
 
 print(f'{top}/{bottom}')
+
+# 다음에 다시 풀기
