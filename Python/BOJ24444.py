@@ -3,6 +3,7 @@ from collections import deque
 
 sys.setrecursionlimit(10**9)
 input = sys.stdin.readline
+# 인터프리터 오류
 
 
 def bfs(vertex):
