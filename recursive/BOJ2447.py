@@ -1,12 +1,17 @@
-def star(num):
-    num //= 3
-    print("***" * num)
-    print("* *" * num)
-    print("***" * num)
-    if num / 3 > 1:
-        print(" ")
+def star(n):
+    if n == 3:
+        return ['***', '* *', '***']
+    stars = star(n//3)
+    arr = []
+    for s in stars:
+        arr.append(s*3)
+    for s in stars:
+        arr.append(s+' '*(n//3)+s)
+    for s in stars:
+        arr.append(s*3)
+    return arr
 
 
 n = int(input())
 
-star(n)
+print(*star(n), sep='\n')
